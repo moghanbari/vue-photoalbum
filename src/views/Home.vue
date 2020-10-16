@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    Hello world
+    <amplify-authenticator></amplify-authenticator>
+    <div>
+      <amplify-sign-out></amplify-sign-out>
+    </div>
   </div>
 </template>
 
