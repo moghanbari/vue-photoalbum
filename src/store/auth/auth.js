@@ -15,7 +15,7 @@ export const auth = {
     },
     async login({commit}, {username, password}) {
       try {
-        Auth.signIn({
+        await Auth.signIn({
           username,
           password
         })
