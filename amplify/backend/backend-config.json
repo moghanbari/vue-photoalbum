@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "vuephotoalbuma6b52d92": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

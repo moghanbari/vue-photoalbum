@@ -10,6 +10,11 @@
       "StackName": "amplify-vuephotoalbum-dev-233003",
       "StackId": "arn:aws:cloudformation:us-east-2:511173258558:stack/amplify-vuephotoalbum-dev-233003/e24ed8e0-0f5f-11eb-8cd9-061cfa87b71e",
       "AmplifyAppId": "dmy2jz1zujc8r"
+    },
+    "categories": {
+      "auth": {
+        "vuephotoalbuma6b52d92": {}
+      }
     }
   }
 }
