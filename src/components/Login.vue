@@ -46,6 +46,7 @@ import { mapActions } from 'vuex'
             password: this.password
           })
 
+          this.$router.push('/albums')
         } catch (error) {
           this.error = error
 
