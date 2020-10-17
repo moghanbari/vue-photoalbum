@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "photoalbumapi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authvuephotoalbuma6b52d92",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
