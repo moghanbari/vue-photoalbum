@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
       <Navbar />
     </div>
     <router-view/>
@@ -11,11 +9,20 @@
 
 <script>
   import Navbar from '@/components/layout/Nav'
+  import { mapActions } from 'vuex'
 
   export default {
     name: 'App',
     components: {
       Navbar
+    },
+    methods: {
+      ...mapActions({
+        authAction: 'auth/authAction'
+      })
+    },
+    mounted() {
+      this.authAction()
     }
   }
 </script>
