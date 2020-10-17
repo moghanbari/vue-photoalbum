@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import SignUpPage from '../views/pages/SignUpPage'
-import AlbumDetailPage from '../views/pages/AlbumDetailPage'
-import AlbumsPage from '../views/pages/AlbumsPage'
+import SignUpPage from '../views/SignUpPage'
+import AlbumDetailPage from '../views/AlbumDetailPage'
+import AlbumsPage from '../views/AlbumsPage'
 
 Vue.use(VueRouter)
 
@@ -14,7 +14,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/singup',
+    path: '/signup',
     name: 'SingUpPage',
     component: SignUpPage
   },
