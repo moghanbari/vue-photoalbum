@@ -31,7 +31,7 @@ export const auth = {
 
       }
     },
-    async confirmSignup(_, {username, code}) {
+    async confirmSignUp(_, {username, code}) {
       try {
         await Auth.confirmSignUp(username, code)
 

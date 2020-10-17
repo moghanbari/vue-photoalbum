@@ -65,7 +65,7 @@
         }
 
         try {
-          await this.$store.dispatch('auth/login', {
+          await this.$store.dispatch('auth/signUp', {
             username: this.username,
             password: this.password,
             email: this.email
@@ -77,13 +77,13 @@
         }
       },
       async confirmSignUp() {
-        const {username, code, password} = this
-        
-        if(!username || !code) {
+        if (!this.username || !this.code) {
           return
         }
-
+        
         try {
+          const { username, password, code } = this
+          
           await this.$store.dispatch('auth/confirmSignUp', {
             username,
             code
